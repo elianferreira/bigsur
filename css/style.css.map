@@ -5,8 +5,7 @@
         "style.scss",
         "sass/_colors.scss",
         "sass/_typography.scss",
-        "sass/_layout.scss",
-        "sass/_animation.scss"
+        "sass/_layout.scss"
     ],
     "names": [],
     "file": "style.css"
