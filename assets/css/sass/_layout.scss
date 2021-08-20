@@ -1,0 +1,266 @@
+// ScroolBar start
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: $bg-opacity;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $bg-opacity;
+  border-radius: 5px;
+}
+
+// ScroolBar end
+
+.container-content {
+  background-color: $bg-opacity;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 960px) {
+  .menu-left,
+  .menu-right {
+    display: none;
+  }
+
+  .navbar-brand {
+    a {
+      font-size: 22px;
+    }
+  }
+
+  .name-portfolio {
+    font-size: 22px;
+
+    &::after {
+      font-size: 12px;
+    }
+  }
+
+  .section-animation {
+    flex-direction: column-reverse;
+    // padding-left: 48px;
+  }
+
+  .jobs {
+    font-size: 44px;
+
+    &::after {
+      top: -20px;
+      left: 10px;
+    }
+  }
+
+  .work-item {
+    flex-direction: column;
+
+    div {
+      img {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .social-media{
+    justify-content: center;
+  }
+}
+
+#btn-red,
+#btn-yellow,
+#btn-green {
+  cursor: pointer;
+}
+
+#figny7_device {
+  fill: rgba(255, 255, 255, 0.2);
+  transform-origin: center center;
+  animation: figny7_device 12s ease infinite alternate;
+}
+
+@keyframes figny7_device {
+  0%,
+  20% {
+    opacity: 1;
+  }
+
+  25% {
+    /*mobile*/
+    opacity: 1;
+    width: 180px;
+    height: 400px;
+
+    transform: translateX(0px) translateY(0px) rotate(-5deg);
+  }
+
+  45% {
+    opacity: 1;
+    width: 180px;
+    height: 400px;
+
+    transform: translateX(0px) translateY(0px) rotate(5deg);
+  }
+
+  47% {
+    opacity: 0;
+  }
+
+  50% {
+    /*tablet*/
+    opacity: 1;
+    width: 380px;
+    height: 512px;
+
+    transform: translateX(-110px) translateY(-70px) rotate(5deg);
+  }
+
+  70% {
+    /*tablet*/
+    opacity: 1;
+    width: 380px;
+    height: 512px;
+
+    transform: translateX(-110px) translateY(-70px) rotate(-5deg);
+  }
+
+  73% {
+    opacity: 0;
+  }
+
+  75% {
+    /*desktop*/
+    opacity: 1;
+    width: 896px;
+    height: 500px;
+
+    transform: translateX(-360px) translateY(-50px) rotate(-3deg);
+  }
+
+  100% {
+    /*desktop*/
+    opacity: 1;
+    width: 896px;
+    height: 500px;
+
+    transform: translateX(-360px) translateY(-50px) rotate(3deg);
+  }
+}
+
+#figny7_device_circle {
+  fill: rgba(255, 255, 255, 0.3);
+
+  /*mobile*/
+  transform: scale(1) translateX(0px) translateY(0px);
+
+  /*tablet*/
+  transform: scale(1) translateX(0px) translateY(50px);
+
+  /*desktop*/
+  transform: scale(0.4) translateX(750px) translateY(20px);
+
+  /*mobile*/
+  transform: scale(1) translateX(0px) translateY(0px);
+
+  animation: figny7_device_circle 12s ease infinite alternate;
+}
+
+@keyframes figny7_device_circle {
+  0%,
+  20% {
+    opacity: 1;
+  }
+
+  25%,
+  45% {
+    /*mobile*/
+    opacity: 1;
+    /*mobile*/
+    transform: scale(1) translateX(0px) translateY(0px);
+  }
+
+  47% {
+    opacity: 0;
+  }
+
+  50%,
+  70% {
+    /*tablet*/
+    opacity: 1;
+    /*tablet*/
+    transform: scale(1) translateX(0px) translateY(35px);
+  }
+
+  73% {
+    opacity: 0;
+  }
+
+  75%,
+  100% {
+    /*desktop*/
+    opacity: 1;
+    /*desktop*/
+    transform: scale(0.4) translateX(750px) translateY(20px);
+  }
+}
+
+.video-description {
+  margin-bottom: 150px;
+}
+.work-item {
+  padding: 40px 0;
+
+  span {
+    color: #c2c2c2;
+  }
+
+  img {
+    max-width: 350px;
+    border-radius: 5px;
+    // transform: translateX(-2000px);
+    transform: translate(-50%, -50%) translate3d(-1000px, 0, 0) skewX(80deg);
+
+    transition: 1s ease;
+    opacity: 0;
+  }
+
+  &:hover {
+    // transition: 0.5s ease;
+    img {
+      transform: translate(0%, 0%) translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+}
+
+.social-media {
+  i {
+    cursor: pointer;
+    color: #e9e9e9;
+    font-size: 24px;
+    transition: 0.5s ease;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  a {
+    text-transform: capitalize;
+    font-size: 18px;
+    color: #e9e9e9;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 1px;
+      width: 0%;
+      background-color: #fff;
+      transition: 0.5s ease;
+    }
+
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}

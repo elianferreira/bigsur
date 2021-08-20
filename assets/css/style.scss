@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('../images/bg-opacity.svg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+ul {
+  list-style-type: none;
+}
+
+@import '../../assets/css/sass/colors';
+@import '../../assets/css/sass/typography';
+@import '../../assets/css/sass/layout';
+@import '../css/sass/animation';
