@@ -122,7 +122,16 @@ a.active {
   border-radius: 3px;
 }
 
+.logo-link {
+  font-size: 18px;
+}
+
 @media screen and (max-width: 960px) {
+  .container-content {
+    position: relative;
+    width: 100%;
+    margin: 0;
+  }
   .menu-left,
   .menu-right {
     display: none;
@@ -157,6 +166,9 @@ a.active {
   }
   .work-item div img {
     margin-top: 40px;
+  }
+  .h4-email {
+    font-size: 22px;
   }
   .social-media {
     -webkit-box-pack: center;
