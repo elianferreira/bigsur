@@ -71,6 +71,8 @@ a.active {
 
 .nav-link:hover {
   color: #fff;
+  -webkit-animation: moveLeftAndRight 1.2s ease infinite alternate;
+          animation: moveLeftAndRight 1.2s ease infinite alternate;
 }
 
 .name-portfolio {
@@ -181,6 +183,35 @@ a.active {
 #btn-yellow,
 #btn-green {
   cursor: pointer;
+}
+
+.get-in-touch .get-link {
+  -webkit-animation: moveLeftAndRight 1.2s ease infinite alternate;
+          animation: moveLeftAndRight 1.2s ease infinite alternate;
+  color: #fff;
+  opacity: 0.4;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.get-in-touch .get-link:hover {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  opacity: 1;
+}
+
+@-webkit-keyframes moveLeftAndRight {
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes moveLeftAndRight {
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
 }
 
 #figny7_device {

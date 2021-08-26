@@ -49,6 +49,7 @@ a.active {
   color: $text-dark;
   &:hover {
     color: $text-light;
+    animation: moveLeftAndRight 1.2s ease infinite alternate;
   }
 }
 

@@ -22,8 +22,7 @@
 }
 
 @media screen and (max-width: 960px) {
-
-  .container-content{
+  .container-content {
     position: relative;
     width: 100%;
     margin: 0;
@@ -71,7 +70,7 @@
     }
   }
 
-  .h4-email{
+  .h4-email {
     font-size: 22px;
   }
 
@@ -84,6 +83,25 @@
 #btn-yellow,
 #btn-green {
   cursor: pointer;
+}
+
+.get-in-touch {
+  .get-link {
+    animation: moveLeftAndRight 1.2s ease infinite alternate;
+    color: $text-light;
+    opacity: 0.4;
+    transition: 0.3s ease;
+    &:hover {
+      transition: 0.3s ease;
+      opacity: 1;
+    }
+  }
+}
+
+@keyframes moveLeftAndRight {
+  to {
+    transform: scale(1.1);
+  }
 }
 
 #figny7_device {
